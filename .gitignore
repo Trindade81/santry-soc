@@ -1,0 +1,26 @@
+# Secrets & credentials — never commit
+*.kdbx
+*.pem
+*.key
+*_key
+*_key.pub
+id_rsa*
+id_ed25519*
+wazuh-install-files.tar
+*wazuh-passwords*
+.env
+secrets/
+credentials/
+
+# Raw evidence / captures (keep out of the public repo)
+*.pcap
+*.pcapng
+auth.log
+*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.obsidian/
+.vscode/
+*.swp
