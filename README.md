@@ -6,7 +6,8 @@ documented incidents** — not tutorials followed step by step.
 
 > Built as a career-transition portfolio project. Every phase was verified by
 > artifact (logs, hashes, exit codes), and every incident is written up like a
-> real case.
+> real case. For the honest story — why I built it, what broke, and how I fixed it —
+> see [Build Notes](docs/BUILD-NOTES.md).
 
 ---
 
@@ -44,6 +45,8 @@ flowchart LR
 ## What this lab demonstrates
 
 - Designing and building an end-to-end detection pipeline on modest hardware.
+- **Troubleshooting under real conditions** — see [Build Notes](docs/BUILD-NOTES.md)
+  for the failures and fixes (DNS, dependencies, sensor visibility, and more).
 - **Sensor placement analysis** — understanding *what a sensor can and cannot see*
   (see INC-0001: a lateral attack invisible to the NIDS but caught by the HIDS).
 - Incident detection, triage, and write-up mapped to **MITRE ATT&CK**.
@@ -75,9 +78,11 @@ lateral traffic. Full write-up in [`docs/INC-0001_Brute-Force-SSH.md`](docs/INC-
 
 ---
 
-## See also
+## Docs
 
-- [Architecture & build notes](docs/ARCHITECTURE.md)
+- [Build Notes](docs/BUILD-NOTES.md) — why I built it, what broke, what worked
+- [Architecture & build notes](docs/ARCHITECTURE.md) — design and engineering decisions
+- [INC-0001](docs/INC-0001_Brute-Force-SSH.md) — first documented incident
 
 ---
 
